@@ -1,2 +1,2 @@
-require './make-key'
+require './make-keys'
 run Sinatra::Application
