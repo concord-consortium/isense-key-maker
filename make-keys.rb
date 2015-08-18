@@ -7,11 +7,11 @@ project_list_response =
 
 project_list = JSON.parse project_list_response.to_str
 
-get '/' do
+get '/isense-keys' do
   body project_list.to_json
 end
 
-post '/' do
+post '/isense-keys' do
   request.body.rewind
   request_payload = JSON.parse request.body.read
 
