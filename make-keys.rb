@@ -15,8 +15,6 @@ post '/' do
   request.body.rewind
   request_payload = JSON.parse request.body.read
 
-  # RestClient.post "http://example.com/resource", { 'x' => 1 }.to_json, :content_type => :json, :accept => :json
-
   add_key_data = {
   	email: ENV['ISENSE_EMAIL'],
   	password: ENV['ISENSE_PASSWORD'],
